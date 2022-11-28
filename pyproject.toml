@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mlops-on-gcp"
+version = "0.1.0"
+description = ""
+authors = ["Simon Löw"]
+readme = "README.md"
+packages = [{include = "part1"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kfp = "^1.8.16"
+google-cloud-aiplatform = "^1.19.0"
+google-cloud-pipeline-components = "^1.0.27"
+scikit-learn = "^1.1.3"
+pandas = "^1.5.1"
+wget = "^3.2"
+certifi = "^2022.9.24"
+seaborn = "^0.12.1"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+ipykernel = "^6.17.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
